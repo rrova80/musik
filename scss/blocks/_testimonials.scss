@@ -1,0 +1,137 @@
+/* .testimonials__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.testimonials {
+  padding: 120px 0 240px;
+  &__title {
+    text-align: center;
+    margin-bottom: 61px;
+  }
+  &__slide {
+    text-align: center;
+    opacity: 0.3;
+    transition: 0.1s;
+    padding-top: 10px;
+  }
+  .swiper-slide-active {
+    .testimonials__slide {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+  }
+  &__slider {
+    .swiper-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-pagination-bullet-active {
+      width: 10px;
+      height: 10px;
+      background: #381ddb;
+      transition: 0.2s;
+    }
+  }
+  &__slide-head {
+    background: rgba($color: #222, $alpha: 0.03);
+    padding: 50px 60px 110px;
+  }
+  &__slide-text {
+    position: relative;
+    opacity: 0.7;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(../icons/testimonials/Quotes_start.svg);
+    }
+    &::before {
+      top: -30px;
+      left: -30px;
+    }
+    &::after {
+      bottom: -30px;
+      right: -30px;
+      transform: rotate(180deg);
+    }
+  }
+  &__slide-footer {
+    // width: 127px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(-55px);
+    // margin: -55px auto 0;
+  }
+  &__slide-avatar {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+  }
+  &__slide-name {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    width: 120%;
+    // margin-left: -12px;
+  }
+  &__slide-contact {
+    color: #381ddb;
+  }
+}
+
+@media (max-width: 1500px) {
+  .testimonials__slide-head {
+    padding: 40px 45px 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .testimonials {
+    padding: 90px 0 180px;
+    &__slide-text {
+      &::before,
+      &::after {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+      }
+      &::before {
+        top: -5px;
+        left: -15px;
+      }
+      &::after {
+        bottom: -5px;
+        right: -15px;
+      }
+    }
+   
+    &__slide-avatar {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonials__slide-head {
+    padding: 20px 20px 60px;
+  }
+}
+
+@media (min-width: 500px) {
+  .testimonials__slider {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}

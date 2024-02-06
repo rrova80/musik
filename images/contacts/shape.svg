@@ -1,0 +1,9 @@
+<svg width="224" height="232" viewBox="0 0 224 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shape">
+<path id="Rectangle" d="M15 232C15 116.573 108.573 23 224 23V232H15Z" fill="#FFA3A3"/>
+<circle id="Ellipse" cx="60" cy="60" r="60" fill="#84C4FF"/>
+<g id="Intersect" style="mix-blend-mode:overlay">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M59.9999 120C93.137 120 120 93.1373 120 60.0002C120 56.9603 119.774 53.9731 119.338 51.0547C90.608 67.7083 66.2105 91.0079 48.2485 118.85C52.0487 119.604 55.9781 120 59.9999 120Z" fill="#84C4FF"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,157 @@
+.gallery {
+  padding: 160px 0 240px;
+  background: linear-gradient(
+    180deg,
+    rgba(252, 82, 82, 0.05) 0%,
+    rgba(252, 82, 82, 0) 100%
+  );
+
+  &__title {
+    margin-bottom: 60px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 431px;
+      height: 431px;
+      top: -160px;
+      left: 130px;
+      background: url(../images/gallery/instagram.svg);
+    }
+  }
+  &__slider {
+    .swiper-slide-prev,
+    .swiper-slide-active,
+    .swiper-slide-next {
+      .gallery__slide {
+        opacity: 1;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      // top: 35%;
+      transform: translateX(-5vw);
+      top: 9vw;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #fff url(../images/gallery/Arrow.svg) center center/ 34px
+        no-repeat;
+      &::after {
+        content: none;
+      }
+    }
+    .swiper-button-prev {
+      rotate: 180deg;
+    }
+  }
+
+  &__slide {
+    opacity: 0.5;
+    transition: 0.2s;
+    &-inner {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 8px;
+    }
+    &-media {
+      margin-bottom: 24px;
+      height: 18.5vw;
+    }
+    &-number {
+      padding-left: 32px;
+      font-family: Montserrat;
+      font-weight: 700;
+      &--heart {
+        background: url(../images/gallery/Heart.svg) left center/ contain
+          no-repeat;
+      }
+      &--chat {
+        background: url(../images/gallery/Chat.svg) left center/ contain
+          no-repeat;
+      }
+    }
+    &-text {
+      margin-bottom: 8px;
+    }
+    &-tags {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .gallery {
+    &__slide-media {
+      height: 23vw;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      transform: translateX(-9vw);
+      top: 13vw;
+      width: 4.47vw;
+      height: 4.47vw;
+      background-size: 3.1vw;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    &__slide-media {
+      height: 35vw;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      transform: translateX(-7vw);
+      top: 19vw;
+    }
+  }
+  .gallery__slider {
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      .gallery__slide {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    &__title {
+      margin-bottom: 30px;
+      &::before {
+        width: 290px;
+        height: 290px;
+        top: -160px;
+        left: 20px;
+        background-size: contain;
+      }
+    }
+    &__slide-inner {
+      gap: 10px;
+    }
+    &__slide-number {
+      padding-left: 20px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    &__slide-media {
+      height: 55vw;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      transform: translateX(-1vw);
+      top: 29vw;
+      width: 6.47vw;
+      height: 6.47vw;
+      background-size: 4.1vw;
+    }
+  }
+}

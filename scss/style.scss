@@ -1,0 +1,54 @@
+@import "./base/reset";
+
+@import "./libs/icomoon";
+
+@import "./blocks/container";
+@import "./blocks/btn";
+@import "./blocks/animation";
+@import "./blocks/menu";
+@import "./blocks/burger";
+@import "./blocks/overlay";
+@import "./blocks/socials";
+@import "./blocks/header";
+@import "./blocks/promo";
+@import "./blocks/category";
+@import "./blocks/about";
+@import "./blocks/singers";
+@import "./blocks/schedule";
+@import "./blocks/tickets";
+@import "./blocks/sponsors";
+@import "./blocks/testimonials";
+@import "./blocks/gallery";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+
+.wrapper {
+  background: #ccc;
+  border: 2px solid #000;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  gap: 10px;
+}
+
+.item {
+  // width: 300px;
+  // height: 200px;
+  background: darkorange;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  &:nth-child(2) {
+    background: red;
+  }
+}
+
+.item--4 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}

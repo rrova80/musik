@@ -1,0 +1,85 @@
+.about {
+  padding: 120px 0 155px;
+
+  &__wrapper {
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 181px;
+      height: 167px;
+      bottom: -120px;
+      left: -296px;
+      background: url(../images/about/music-decor.svg) center center/contain
+        no-repeat;
+    }
+  }
+
+  &__box {
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+  }
+
+  &__img {
+    border-radius: 24px;
+    &--top {
+      position: absolute;
+      right: -15.2%;
+      bottom: -15.2%;
+    }
+  }
+
+  &__inner {
+    max-width: 570px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding: 90px 0 116px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    &__wrapper {
+      flex-direction: column-reverse;
+      gap: 60px;      
+    }
+    &__inner {
+      max-width: 654px;
+    }
+    &__text {
+      text-align: justify;
+    }
+    &__box {
+      max-width: 350px;
+    }
+    &__button {   
+      display: flex;  
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .about__box {
+    max-width: 300px;
+  }
+  .about__img--top {
+    right: -8%;
+    bottom: -8%;
+  }
+}

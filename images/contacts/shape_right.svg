@@ -1,0 +1,9 @@
+<svg width="72" height="48" viewBox="0 0 72 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shape">
+<path id="Rectangle" d="M24 48C24 21.4903 45.4903 0 72 0V48H24Z" fill="#FFA3A3"/>
+<path id="Rectangle_2" d="M0 0C26.5097 0 48 21.4903 48 48H0V0Z" fill="#84C4FF"/>
+<g id="Intersect" style="mix-blend-mode:overlay">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 47.9999H48C48 35.8265 43.4684 24.7116 36 16.25C28.5316 24.7116 24 35.8265 24 47.9999Z" fill="#84C4FF"/>
+</g>
+</g>
+</svg>

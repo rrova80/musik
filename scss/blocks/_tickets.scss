@@ -1,0 +1,105 @@
+.tickets {
+  padding: 120px 0 120px;
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &__card {
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 370px;
+    width: 100%;
+    &:nth-child(odd) {
+      margin-left: auto;
+    }
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+    }
+    &--black {
+      &::before {
+        background: #222;
+      }
+    }
+    &--blue {
+      .tickets__card-title,
+      .tickets__card-price {
+        color: #381ddb;
+      }
+      &::before {
+        background: #381ddb;
+      }
+    }
+    &--orange {
+      .tickets__card-title,
+      .tickets__card-price {
+        color: #fc5252;
+      }
+      &::before {
+        background: #fc5252;
+      }
+    }
+  }
+}
+
+.tickets__card-title {
+  margin-bottom: 15px;
+}
+
+.tickets__card-price {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tickets__card-benefits {
+  margin: 30px 0;
+}
+
+.tickets__card-benefit {
+  margin-bottom: 15px;
+  &--disabled {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tickets__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .tickets {
+    padding: 90px 0 90px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tickets__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .tickets__card {
+    margin: 0 auto;
+  }
+}

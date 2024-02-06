@@ -1,0 +1,129 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+    height: 34.5vw;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    background: #381ddb url(../images/contacts/shape.svg) right bottom/224px
+      no-repeat;
+    width: 44%;
+    padding: 20px 22px 88px 57px;
+  }
+  &__head {
+    color: #fff;
+    margin-bottom: 80px;
+  }
+  &__text {
+    opacity: 0.7;
+    font-size: 24px;
+  }
+  &__list {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__item {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &:hover {
+      .icon-Phone,.icon-Email,.icon-Map-Pin {
+        animation-name: rotation;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+  &__font {
+    font-size: 24px;
+  }
+  &__right {
+    width: 56%;
+    background: rgba(34, 34, 34, 0.03) url(../images/contacts/shape_right.svg)
+      right 56px bottom / 72px no-repeat;
+    padding: 40px 93px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__form {
+    max-width: 570px;
+    width: 100%;
+  }
+  &__form-title {
+    margin-bottom: 40px;
+  }
+
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    &:has(.contacts__form-input:focus) {
+      .contacts__form-label {
+        color: #381ddb;
+      }
+    }
+  }
+
+  &__form-label {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.7;
+  }
+  &__form-input {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    height: 32px;
+    outline: none;
+    background: transparent;
+    &--message {
+      resize: none;
+      height: 104px;
+      // margin-bottom: 10px;
+    }
+    &:focus {
+      border-bottom: 1px solid #381ddb;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .contacts {
+    &__wrapper {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .contacts {
+    &__left,
+    &__right {
+      width: 50%;
+    }
+    &__right {
+      background: rgba(34, 34, 34, 0.03);
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .contacts {
+    &__wrapper {
+      flex-direction: column; //column-reverse;
+    }
+    &__left,
+    &__right {
+      width: 100%;
+      padding: 40px 50px;
+    }
+    &__left {
+      background-size: 15%;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+}

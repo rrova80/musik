@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-Email:before {
+  content: "\e900";
+  color: #ffa3a3;
+}
+.icon-Facebook:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-Instagram:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-Linkedin:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-Map-Pin:before {
+  content: "\e904";
+  color: #ffa3a3;
+}
+.icon-Phone:before {
+  content: "\e905";
+  color: #ffa3a3;
+}
+.icon-Twitter:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-Play:before {
+  content: "\e907";
+}
+.icon-folk:before {
+  content: "\e908";
+  color: #fc5252;
+}
+.icon-instrumental:before {
+  content: "\e909";
+  color: #381ddb;
+}
+.icon-jazz:before {
+  content: "\e90a";
+  color: #84c4ff;
+}
+.icon-pop:before {
+  content: "\e90b";
+  color: #db841d;
+}
+.icon-rock:before {
+  content: "\e90c";
+  color: #c00096;
+}

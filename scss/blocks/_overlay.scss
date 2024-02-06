@@ -1,0 +1,19 @@
+.overlay {
+  display: none;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: #0000007e;
+  transition: 0.4s;
+  &.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    display: block;
+  }
+}
