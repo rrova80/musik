@@ -29,13 +29,13 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    &:hover {
-      .icon-Phone,.icon-Email,.icon-Map-Pin {
-        animation-name: rotation;
-        animation-duration: 0.7s;
-        animation-iteration-count: 1;
-      }
-    }
+    // &:hover {
+    //   .icon-Phone,.icon-Email,.icon-Map-Pin {
+    //     animation-name: rotation;
+    //     animation-duration: 0.7s;
+    //     animation-iteration-count: 1;
+    //   }
+    // }
   }
   &__font {
     font-size: 24px;
