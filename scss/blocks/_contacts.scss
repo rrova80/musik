@@ -90,6 +90,34 @@
   }
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+.checkbox-label {
+  padding-left: 25px;
+  position: relative;
+  &::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &::before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    background: #381ddb;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+  }
+}
+
 @media (max-width: 1600px) {
   .contacts {
     &__wrapper {
