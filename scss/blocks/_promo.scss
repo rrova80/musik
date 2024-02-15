@@ -71,6 +71,9 @@
 }
 
 @media (max-width: 600px) {
+  .promo {
+    background: url(../images/promo/promo-bg-mobile.webp);
+  }
   .promo__text {
     font-size: 20px;
   }
