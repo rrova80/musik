@@ -123,12 +123,13 @@ const spanDays = document.querySelector(".promo__timer-value--days");
 const spanHours = document.querySelector(".promo__timer-value--hours");
 const spanMinutes = document.querySelector(".promo__timer-value--minutes");
 const spanSeconds = document.querySelector(".promo__timer-value--seconds");
+const promoTimer = document.querySelector(".promo__timer");
 
 // установка дня в будущем
-const days = 22;
-const hours = 13;
+const days = 30;
+const hours = 24;
 const endDate =
-  days * 24 * 60 * 60 * 1000 + hours * 60 * 60 * 1000 + 1706459886000;
+  days * 24 * 60 * 60 * 1000 + hours * 60 * 60 * 1000 + 1708592770000;
 
 const intervalId = setInterval(() => {
   const currentDate = new Date();
