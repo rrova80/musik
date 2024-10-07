@@ -1,11 +1,11 @@
 // sliders
 
 const categorySlider = new Swiper(".category__slider", {
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: true,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: true,
+  //   pauseOnMouseEnter: true,
+  // },
   loop: true,
   spaceBetween: 30,
   centeredSlides: true,
@@ -32,9 +32,9 @@ const categorySlider = new Swiper(".category__slider", {
 });
 
 const testimonialsSlider = new Swiper(".testimonials__slider", {
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   loop: true,
   centeredSlides: true,
   spaceBetween: 30,
